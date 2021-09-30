@@ -1,5 +1,6 @@
 body {
     font-family: 'VT323', monospace;
+    background-image: 
 }
 
 main {
@@ -12,6 +13,7 @@ main {
 .calculation {
     border: 2px solid black; 
     padding: 10px;
+    border-radius: 20px;
 } 
 
 h1, h2 {
@@ -21,4 +23,15 @@ h1, h2 {
 
 h1 {
     font-size: 50px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px
+}
+
+input {
+    padding: 10px;
 }
