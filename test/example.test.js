@@ -52,3 +52,14 @@ test('add(10,2) function', (expect) => {
     // assert 
     expect.equal(actual, expected, "should add 10 & 2"); 
 });
+
+test('subtract(4,3) function', (expect) => {
+    
+    const input1 = 4; 
+    const input2 = 3; 
+    const expected = 1; 
+
+    const actual = subtract(input1, input2); 
+
+    expect.equal(actual, expected, "should subtract 4 & 3");
+});
