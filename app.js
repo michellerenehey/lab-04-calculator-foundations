@@ -39,3 +39,14 @@ multButton.addEventListener('click', () =>{
   const multResult = mult(multValue1, multValue2); 
   multAnswer.textContent = multResult;
 });
+
+// division
+
+const divInput1 = document.getElementById('div-input1');
+const divInput2 = document.getElementById('div-input2'); 
+const divButton = document.getElementById('div-btn'); 
+const divAnswer = document.getElementById('div-answer'); 
+
+divButton.addEventListener('click', () => {
+
+})
