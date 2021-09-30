@@ -1,4 +1,4 @@
-import { add, sub, mult, div } from './calculations.js';
+import { add, sub, mult, div, mod } from './calculations.js';
 
 //addition
 const addInput1 = document.getElementById('add-input1'); 
@@ -62,5 +62,8 @@ const modButton = document.getElementById('mod-btn');
 const modAnswer = document.getElementById('mod-answer');
 
 modButton.addEventListener('click', () => {
-
+  const modValue1 = Number(modInput1.value); 
+  const modValue2 = Number(modInput2.value); 
+  const modResult = mod(modValue1, modValue2); 
+  modAnswer.textContent = modResult;
 })
