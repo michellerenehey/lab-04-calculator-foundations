@@ -1,8 +1,10 @@
-// import functions and grab DOM elements
+const addInput1 = document.getElementById('add-input1'); 
+const addInput2 = document.getElementById('add-input2');
+const addButton = document.getElementById('add-btn');
+const addAnswer = document.getElementById('add-answer');
 
-// initialize global state
+console.log (addInput1, addInput2, addButton, addAnswer);
 
-// set event listeners 
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+addButton.addEventListener('click', () => {
+  console.log("add button is being clicked")
+}); 
