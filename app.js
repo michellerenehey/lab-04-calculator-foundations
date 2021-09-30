@@ -52,4 +52,15 @@ divButton.addEventListener('click', () => {
   const divValue2 = Number(divInput2.value); 
   const divResult = div(divValue1, divValue2); 
   divAnswer.textContent = divResult;
+}); 
+
+// modulo
+
+const modInput1 = document.getElementById('mod-input1');
+const modInput2 = document.getElementById('mod-input2');
+const modButton = document.getElementById('mod-btn');
+const modAnswer = document.getElementById('mod-answer');
+
+modButton.addEventListener('click', () => {
+
 })
