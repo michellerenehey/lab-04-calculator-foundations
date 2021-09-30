@@ -1,7 +1,5 @@
 import { add, sub } from './calculations.js';
 
-// console.log(sub)
-
 //addition
 const addInput1 = document.getElementById('add-input1'); 
 const addInput2 = document.getElementById('add-input2');
@@ -26,4 +24,15 @@ subButton.addEventListener('click', () => {
   const subValue2 = Number(subInput2.value); 
   const subResult = sub(subValue1, subValue2); 
   subAnswer.textContent = subResult;
+});
+
+// multiplication
+
+const multInput1 = document.getElementById('mult-input1');
+const multInput2 = document.getElementById('mult-input2');
+const multButton = document.getElementById('mult-btn');
+const multResult = document.getElementById('mult-answer');
+
+multButton.addEventListener('click', () =>{
+  console.log("clicking the button!")
 });
