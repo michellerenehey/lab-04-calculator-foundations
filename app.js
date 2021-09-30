@@ -1,4 +1,4 @@
-import { add, sub, mult } from './calculations.js';
+import { add, sub, mult, div } from './calculations.js';
 
 //addition
 const addInput1 = document.getElementById('add-input1'); 
@@ -48,5 +48,8 @@ const divButton = document.getElementById('div-btn');
 const divAnswer = document.getElementById('div-answer'); 
 
 divButton.addEventListener('click', () => {
-
+  const divValue1 = Number(divInput1.value); 
+  const divValue2 = Number(divInput2.value); 
+  const divResult = div(divValue1, divValue2); 
+  divAnswer.textContent = divResult;
 })
