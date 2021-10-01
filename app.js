@@ -1,4 +1,4 @@
-import { add, sub, mult, div, mod } from './calculations.js';
+import { add, sub, mult, div, mod, intDiv } from './calculations.js';
 
 //addition
 const addInput1 = document.getElementById('add-input1'); 
@@ -67,3 +67,7 @@ modButton.addEventListener('click', () => {
   const modResult = mod(modValue1, modValue2); 
   modAnswer.textContent = modResult;
 })
+
+// integer division
+
+const intDivInput1 = document.getElementById('int-div-input1');

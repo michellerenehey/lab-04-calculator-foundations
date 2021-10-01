@@ -1,7 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
 
-import { add_two, add, sub, mult, div, mod } from '../calculations.js';
+import { add_two, add, sub, mult, div, mod, intDiv } from '../calculations.js';
 
 const test = QUnit.test;
 
@@ -94,7 +94,7 @@ test('modulo(15,4) fucntion', (expect) => {
     expect.equal(actual, expected, "should modulo 14 % 4")
 }); 
 
-test('modulo(234,66) fucntion', (expect) => {
+test('modulo(234,66) function', (expect) => {
     const input1 = 234;
     const input2 = 66; 
     const expected = 36; 
@@ -102,4 +102,14 @@ test('modulo(234,66) fucntion', (expect) => {
     const actual = mod(input1, input2); 
 
     expect.equal(actual, expected, "should modulo 234 % 66")
+}); 
+
+test('intDiv(5, 2) function', (expect) => {
+    const input1 = 5;
+    const input2 = 2; 
+    const expected = 2; 
+
+    const actual = intDiv(input1, input2); 
+
+    expect.equal(actual, expected, "should divide 5 by 2 and round down")
 }); 
