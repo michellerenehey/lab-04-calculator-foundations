@@ -24,6 +24,12 @@ h1, h2 {
 
 h1 {
     font-size: 50px;
+    
+}
+
+h1:hover {
+    font-size: 75px;
+    transform: rotate(180deg);
 }
 
 button {
