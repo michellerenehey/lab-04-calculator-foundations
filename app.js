@@ -68,15 +68,19 @@ modButton.addEventListener('click', () => {
   modAnswer.textContent = modResult;
 })
 
-// // integer division
-
-// const intDivInput1 = document.getElementById('int-div-input1');
-// const intDivInput2 = document.getElementById('int-div-input2');
-// const intDivButton = document.getElementById('int-div-btn');
-// const intDivAnswer = document.getElementById('int-div-answer');
 
 
-// intDivButton.addEventListener('click', () => {
-//   const intDivValue1 = Number(intDivInput1.value); 
-//   const intDivValue2 = Number(intDivInput2.value); 
-//   console.log(intDivValue1, intDivValue2)}); 
+// integer division
+
+const intInput1 = document.getElementById('int-input1');
+const intInput2 = document.getElementById('int-input2');
+const intButton = document.getElementById('int-btn');
+const intAnswer = document.getElementById('int-answer');
+
+
+intButton.addEventListener('click', () => {
+  const intValue1 = Number(intInput1.value); 
+  const intValue2 = Number(intInput2.value);
+  const intResult = intDiv(intValue1, intValue2);
+  intAnswer.textContent = intResult}); 
+  // console.log(intDivValue1) 
